@@ -40,3 +40,17 @@ To run in this in interactive mode use debug
 ```shell script
 docker run {{site.data.keyword.cfmr.docker_repo}}/{{site.data.keyword.cfmr.name}}-installer-extended debug
 ```
+
+# {{site.data.keyword.product}} Verify Installs
+
+To verify if a {{site.data.keyword.product}} install is successful, execute the following command:
+
+```docker
+docker run {{site.data.keyword.docker_repo}}/{{site.data.keyword.cfmr.name}}-installer verify
+```
+
+This command does the following:
+
+* Logs into the OpenShift environment
+* Verifies if {{site.data.keyword.product}} is running successfully
+* Checks if the url for cf api exists
