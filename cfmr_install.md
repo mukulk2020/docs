@@ -22,7 +22,7 @@ docker run {{site.data.keyword.cfmr.docker_repo}}/{{site.data.keyword.cfmr.name}
 Run a command e.g. check with an environment configuration
 
 ```shell script
-docker run --env-file=./environments/ocp43-vc1.env.list hclcnlabs/{{site.data.keyword.cfmr.name}}-installer check
+docker run --env-file=./environments/ocp43-vc1.env.list {{site.data.keyword.cfmr.docker_repo}}/{{site.data.keyword.cfmr.name}}-installer check
 ```
 
 To run in interactive mode use debug
