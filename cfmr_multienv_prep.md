@@ -29,7 +29,7 @@ To prepare for basic installation, configure any of the following values that ap
 # Env list for cfmr installation (single env or multi env)
 OPENSHIFT_URL=<The server that is also provided by IBM Cloud OpenShift, for example, https://<something>.cloud.ibm.com:<port>>
 OPENSHIFT_TOKEN=<Openshift cluster token string, for example, <alphanumberic long token>
-MULTI_ENVIRONMENTS= <multiple environments to be created in a single cluster. Provide space separated environment names like dev test prod etc., If left blank only one instance of {{site.data.keyword.cf4ocp.name}} will be created in the OpenShift cluster>
+MULTI_ENVIRONMENTS= <multiple environments to be created in a single cluster. Provide space separated environment names like dev test prod etc., If left blank only one instance of {{site.data.keyword.cfmr.name}} will be created in the OpenShift cluster>
 
 ```
 
