@@ -41,7 +41,7 @@ To run in this in interactive mode use debug
 docker run {{site.data.keyword.cfmr.docker_repo}}/{{site.data.keyword.cfmr.name}}-installer-extended debug
 ```
 
-# {{site.data.keyword.product}} Verify Installs
+## Verify Installs
 
 To verify if a {{site.data.keyword.product}} install is successful, execute the following command:
 
