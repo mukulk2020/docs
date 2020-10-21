@@ -10,13 +10,13 @@ This is an installer for Cloud Foundry for OpenShift and is intended to run in a
 See available commands:
 
 ```shell script
-docker run hclcnlabs/{{site.data.keyword.cfmr.name}}-installer <command>
+docker run {{site.data.keyword.cfmr.docker_repo}}/{{site.data.keyword.cfmr.name}}-installer <command>
 ```
 
 Run a command e.g. install
 
 ```shell script
-docker run hclcnlabs/{{site.data.keyword.cfmr.name}}-installer install
+docker run {{site.data.keyword.cfmr.docker_repo}}/{{site.data.keyword.cfmr.name}}-installer install
 ```
 
 Run a command e.g. check with an environment configuration
@@ -28,7 +28,7 @@ docker run --env-file=./environments/ocp43-vc1.env.list hclcnlabs/{{site.data.ke
 To run in interactive mode use debug
 
 ```shell script
-docker run hclcnlabs/{{site.data.keyword.cfmr.name}}-installer debug
+docker run {{site.data.keyword.cfmr.docker_repo}}/{{site.data.keyword.cfmr.name}}-installer debug
 ```
 
 ## Extended
@@ -38,5 +38,5 @@ There is also an extended version of the {{site.data.keyword.cfmr.name}}-install
 To run in this in interactive mode use debug
 
 ```shell script
-docker run hclcnlabs/{{site.data.keyword.cfmr.name}}-installer-extended debug
+docker run {{site.data.keyword.cfmr.docker_repo}}/{{site.data.keyword.cfmr.name}}-installer-extended debug
 ```
