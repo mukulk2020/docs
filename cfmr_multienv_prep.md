@@ -157,7 +157,7 @@ helm install ibm-cfmr-installer \
   --set "OPENSHIFT_URL=<The server that is also provided by IBM Cloud OpenShift, for example, https://<something>.cloud.ibm.com:<port>>" \
   --set "OPENSHIFT_TOKEN=<Openshift cluster token string, for example, <alphanumberic long token>"
 ```
-### Running an Install for multi environment setup in a cluster (If features.multiEnvironments value is true)
+### Running an Install : when features.multiEnvironments value is true [Multi Environment setup in a cluster]
 
 ```shell script
 helm install ibm-cfmr-installer \
@@ -168,7 +168,7 @@ helm install ibm-cfmr-installer \
   --set "MULTI_ENVIRONMENTS=<Provide space separated environment names like dev test prod etc. If features.multiEnvironments value is false then leave it blank >"
 ```
 
-### Running an Install for multi environment setup with ldap integration in a cluster (If features.multiEnvironments and features.enableLdapIntegration both values are true)
+### Running an Install : when features.multiEnvironments and features.enableLdapIntegration both values are true [Multi Environment setup + Ldap Integration ]
 
 
 ```shell script
