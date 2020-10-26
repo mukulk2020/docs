@@ -148,7 +148,7 @@ If the optional cert-manager is also installed there is also a cert-manager name
 
 ## Installation
 
-### Basic Install
+### Running an Install [Single Environment setup]
 
 ```shell script
 helm install ibm-cfmr-installer \
