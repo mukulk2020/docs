@@ -153,32 +153,23 @@ If the optional cert-manager is also installed there is also a cert-manager name
 ```shell script
 helm install ibm-cfmr-installer \
   --values values.yaml \
-  --path charts/ibm-cfmr-prod \
-  --set "OPENSHIFT_URL=<The server that is also provided by IBM Cloud OpenShift, for example, https://<something>.cloud.ibm.com:<port>>" \
-  --set "OPENSHIFT_TOKEN=<Openshift cluster token string, for example, <alphanumberic long token>"
+  --path charts/ibm-cfmr-prod
 ```
 ### Running an Install [Multi Environment setup]
-When features.multiEnvironments value is true
+When features.multiEnvironments value is not empty i.e. dev test
 ```shell script
 helm install ibm-cfmr-installer \
   --values values.yaml \
-  --path charts/ibm-cfmr-prod \
-  --set "OPENSHIFT_URL=<The server that is also provided by IBM Cloud OpenShift, for example, https://<something>.cloud.ibm.com:<port>>" \
-  --set "OPENSHIFT_TOKEN=<Openshift cluster token string, for example, <alphanumberic long token>" \
-  --set "MULTI_ENVIRONMENTS=<Provide space separated environment names like dev test prod etc. If features.multiEnvironments value is false then leave it blank >"
+  --path charts/ibm-cfmr-prod 
 ```
 
 ### Running an Install [Multi Environment setup + Ldap Integration]
-When features.multiEnvironments and features.enableLdapIntegration both values are true 
+When features.multiEnvironments value is not empty and features.enableLdapIntegration is true in Configuration 
 
 ```shell script
 helm install ibm-cfmr-installer \
   --values values.yaml \
   --path charts/ibm-cfmr-prod \
-  --set "OPENSHIFT_URL=<The server that is also provided by IBM Cloud OpenShift, for example, https://<something>.cloud.ibm.com:<port>>" \
-  --set "OPENSHIFT_TOKEN=<Openshift cluster token string, for example, <alphanumberic long token>" \
-  --set "MULTI_ENVIRONMENTS=<Provide space separated environment names like dev test prod etc. If features.multiEnvironments value is false then leave it blank >" \
-  --set "LDAP_INTEGRATION_REQ=true" \
   --set "LDAP_IP_ADDRESS=<The IP address where the LDAP server is running.>" \
   --set "LDAP_PORT=<The Port for the LDAP  server>" \
   --set "LDAP_USER_DN=<Entire LDAP admin CN information here - Example: cn=LDAPadmin,dc=..,dc=..>" \
